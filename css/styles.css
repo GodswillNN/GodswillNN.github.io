@@ -155,6 +155,40 @@ body {
   text-rendering: optimizeSpeed;
 }
 
+body {
+  font-family: Arial;
+  color: black;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+}
+
+header {
+  grid-column-start: 1;
+  grid-column-end: 3;
+
+}
+
+main {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+aside {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+footer {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+
 article > * + * {
   margin-top: 1em;
 }
