@@ -165,27 +165,29 @@ body {
 
 header {
   grid-column-start: 1;
-  grid-column-end: 3;
+  grid-column-end: 4;
 
 }
 
 main {
   grid-column-start: 2;
-  grid-column-end: 3;
+  grid-column-end: 4;
   grid-row-start: 2;
-  grid-row-end: 3;
+  grid-row-end: 6;
 }
 
 aside {
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 2;
-  grid-row-end: 3;
+  grid-row-end: 6;
 }
 
 footer {
   grid-column-start: 1;
-  grid-column-end: 2;
+  grid-column-end: 4;
+  grid-row-start: 6;
+  grid-row-end: 7;
 }
 
 
