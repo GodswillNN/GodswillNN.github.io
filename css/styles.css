@@ -166,7 +166,8 @@ body {
 header {
   grid-column-start: 1;
   grid-column-end: 4;
-
+  border-color: green;
+  border-style: solid;
 }
 
 main {
@@ -174,6 +175,8 @@ main {
   grid-column-end: 4;
   grid-row-start: 2;
   grid-row-end: 6;
+  border-color: blue;
+      border-style: solid;
 }
 
 aside {
@@ -202,6 +205,7 @@ h4,
 h5,
 h6 {
   font-weight: var(--font-weight-bold);
+font-color: green;
 }
 
 h1,
