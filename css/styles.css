@@ -191,6 +191,8 @@ footer {
   grid-column-end: 4;
   grid-row-start: 6;
   grid-row-end: 7;
+  border-color: green;
+      border-style: solid;
 }
 
 
