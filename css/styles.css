@@ -193,6 +193,8 @@ footer {
   grid-row-end: 7;
   border-color: green;
       border-style: solid;
+      line-height:  1;
+     
 }
 
 
@@ -207,7 +209,7 @@ h4,
 h5,
 h6 {
   font-weight: var(--font-weight-bold);
-font-color: green;
+color: green;
 }
 
 h1,
