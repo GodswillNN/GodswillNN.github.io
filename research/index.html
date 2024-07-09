@@ -58,3 +58,75 @@
   </body>
 
 </html>
+
+<div id="research-diagram"></div>
+
+<script>
+// Define the data for the research areas and their connections
+const researchData = [
+  {
+    id: 1,
+    label: "Fruit Development Indexes",
+    connections: [4]
+  },
+  {
+    id: 2,
+    label: "Mycorrhizal Fungi Diversity",
+    connections: [4]
+  },
+  {
+    id: 3,
+    label: "Disease Incidence in Oil Palm Seedlings",
+    connections: [4]
+  },
+  {
+    id: 4,
+    label: "Oil Palm Research",
+    connections: [5]
+  },
+  {
+    id: 5,
+    label: "CRISPR-Cas Genome Editing for Crop Improvement",
+    connections: [6]
+  },
+  {
+    id: 6,
+    label: "Genome Mapping for Oil Palm Breeding",
+    connections: [7]
+  },
+  {
+    id: 7,
+    label: "Biodiversity and Conservation",
+    connections: []
+  }
+];
+
+// Create the diagram using vis.js library
+const container = document.getElementById("research-diagram");
+const nodes = new vis.DataSet(researchData.map(item => ({ id: item.id, label: item.label })));
+const edges = new vis.DataSet(
+  researchData.flatMap(item => item.connections.map(conn => ({ from: item.id, to: conn })))
+);
+
+const data = {
+  nodes: nodes,
+  edges: edges
+};
+
+const options = {
+  nodes: {
+    shape: "box"
+  },
+  edges: {
+    arrows: "to"
+  },
+  layout: {
+    hierarchical: {
+      direction: "UD",
+      edgeMinimization: true
+    }
+  }
+};
+
+const network = new vis.Network(container, data, options);
+</script>
